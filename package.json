@@ -1,0 +1,27 @@
+{
+  "name": "payment_rzp_ptm_jsp",
+  "version": "1.0.0",
+  "description": "Payment Gateway for Razorpay  Paytm And Juspay",
+  "main": "payment.js",
+  "scripts": {
+    "test": "cross-env NODE_PATH=./ jest ./tests/*.test.ts",
+    "debug": "cross-env DEBUG=app,app:* NODE_PATH=. ts-node-dev --inspect --respawn --transpileOnly src/payment.ts",
+    "watch": "cross-env DEBUG=app,app:* NODE_PATH=. ts-node-dev --respawn --transpileOnly src/payment.ts",
+    "build": "NODE_ENV=production tsc -p .",
+    "start": "NODE_ENV=production node ./dist/payment.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakshmanachimata/payment_rzp_ptm_jsp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lakshmanachimata/payment_rzp_ptm_jsp/issues"
+  },
+  "homepage": "https://github.com/lakshmanachimata/payment_rzp_ptm_jsp#readme",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
